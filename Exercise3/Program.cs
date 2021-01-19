@@ -12,7 +12,7 @@ namespace Exercise3
 
             foreach (var number in array)
             {
-                Console.WriteLine(number);
+                Console.Write(number + " ");
             }
         }
     }
@@ -21,11 +21,13 @@ namespace Exercise3
     {
         public static void AscendingSort(this int[] array)
         {
+            // Или просто Array.Sort(array); // :)
             for (int i = 1; i < array.Length; i++)
             {
                 for (int j = 1; j < array.Length; j++)
                 {
-                    if (array[j] < array[j - 1]) {
+                    if (array[j] < array[j - 1])
+                    {
                         int temp = array[j];
                         array[j] = array[j - 1];
                         array[j - 1] = temp;

@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Text;
 using System.Threading;
-
 namespace Exercise2
 {
     static class Player
@@ -16,7 +15,8 @@ namespace Exercise2
                     Thread.Sleep(note.Duration);
                 } else
                 {
-                    Console.Beep(note.Frequency, note.Duration);
+                    //Console.Beep(note.Frequency, note.Duration);
+                    Console.Beep(500, 2000); //  На таких настройках слышно.
                 }
             }
         }
